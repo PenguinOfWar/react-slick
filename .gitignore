@@ -9,3 +9,4 @@ npm-debug.log
 *.sublime-*
 .idea
 dist
+yarn.lock
