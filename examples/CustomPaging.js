@@ -5,8 +5,8 @@ import {baseUrl} from './config'
 export default class CenterMode extends Component {
   render() {
     const settings = {
-      customPaging: function(i) {
-        return <a><img src={`${baseUrl}/abstract0${i+1}.jpg`}/></a>
+      customPaging: function(i, currentSlide) {
+        return <button>{ currentSlide === i ? 'This slide is currently selected' : 'This slide is not currently selected' } - you are on slide { i }</button>
       },
       dots: true,
       dotsClass: 'slick-dots slick-thumb',
