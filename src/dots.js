@@ -46,7 +46,7 @@ export class Dots extends React.Component {
 
       return (
         <li key={i} className={className}>
-          {React.cloneElement(this.props.customPaging(i), {onClick})}
+          {React.cloneElement(this.props.customPaging(i, this.props.currentSlide), {onClick})}
         </li>
       );
     });
